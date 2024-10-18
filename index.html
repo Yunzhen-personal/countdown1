@@ -46,9 +46,10 @@
         <h2 class="box" id="hours"></h2>
         <h2 class="box" id="minutes"></h2>
         <h2 class="box" id="seconds"></h2>
-        <h2>
-            Left until <br> 10/17 9AM
-        </h2>
+        <h3>
+            Left until </h3><br> 
+            <h2>11/21 9AM</h2>
+        
     </div>
 
 <script>
@@ -61,7 +62,7 @@
 
     function showRemaining() {
         const now = new Date();
-        const targetDate = new Date(now.getFullYear(), 9, 17, 9, 0, 0);  // 10月(9)17日 9AM
+       const targetDate = new Date(now.getFullYear(), 10, 21, 9, 0, 0);  // 11月21日 9AM
         
         const timeDifference = targetDate - now;  // 目標時間與現在時間的差距（毫秒）
         
